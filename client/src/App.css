@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+  background-color: MediumAquaMarine;
+  color: black;
+  font-size: calc(10px + 2vmin);
+  padding-bottom: 5%;
+  height: 100vh;
+}
+
+header {
+  background-color: MediumAquaMarine;
+  color: black;
+  font-size: calc(30px + 2vmin);
+  border-bottom: 1px solid grey;
+}
+
+form {
+  display: inline-block;
+  padding: 2%;
+  width: 100%;
+}
+
+input[type=text], textarea{
+  width: 100%;
+  resize: vertical;
+}
+
+h1 {
+  text-align: left;
+  margin-top: 0;
+}
+
+#app-container {
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px grey;
+  width: 80%;
+  display: flex;
+  margin-left: 10%;
+}
+
+#qna-list {
+  width: 100%;
+  padding: 3% 3%;
+}
+
+details {
+  width: 100%;
+  float:left;
+  padding-top:1%;
+}
+
+summary {
+  text-align: left;
+}
+
+p {
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0.5%;
+  margin: 10px 0 0 0;
+  text-align: left;
+}
+
+button {
+  margin: 0 0 0 10px;
+  border-radius: 5px;
+  font-size: calc(7px + 2vmin);
+  cursor: pointer;
+}
+
+.edit-save-btn {
+  float:left;
+  margin: 10px 0 0 0;
+}
+
+.add-save-btn {
+  margin: 10px 0 0 0;
+}
+
+.add-btn, .gotoqna-btn {
+  margin: 14px 0;
+}
