@@ -104,6 +104,4 @@ dist
 .tern-port
 
 # custom project directories and files
-client/package-lock.json
-client/build
-server/package-lock.json
+package-lock.json

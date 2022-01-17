@@ -14,7 +14,7 @@ header {
   border-bottom: 1px solid grey;
 }
 
-form {
+#add-questions {
   display: inline-block;
   padding: 2%;
   width: 100%;
