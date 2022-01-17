@@ -24,10 +24,6 @@ function App() {
     } else if (key === STORAGE_KEY_LAST_CREATED_ID) {
       return Number(localStorage.getItem(STORAGE_KEY_LAST_CREATED_ID)) || 0
     }
-  } 
-
-  const toggleTab = () => {
-    setTab(tab === TAB_KEY_ADD_QNA ? TAB_KEY_QNA_LIST : TAB_KEY_ADD_QNA);
   }
 
   const addqna = (questionEl, answerEl) => {
@@ -78,9 +74,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">QnA Book</header>
-      {(tab === TAB_KEY_QNA_LIST || tab === TAB_KEY_EDIT_QNA) && <button className="add-btn" onClick={toggleTab}>Add question</button>}
+      {(tab === TAB_KEY_QNA_LIST || tab === TAB_KEY_EDIT_QNA) && <button className="add-btn" onClick={()=>{setTab(TAB_KEY_ADD_QNA)}}>Add question</button>}
       {tab === TAB_KEY_EDIT_QNA && <>&nbsp;</>}
-      {(tab === TAB_KEY_ADD_QNA || tab === TAB_KEY_EDIT_QNA) && <button className="gotoqna-btn" onClick={toggleTab}>Go To QnA(s)</button>}
+      {(tab === TAB_KEY_ADD_QNA || tab === TAB_KEY_EDIT_QNA) && <button className="gotoqna-btn" onClick={()=>{setTab(TAB_KEY_QNA_LIST)}}>Go To QnA(s)</button>}
       <div id="app-container">
         {tab === TAB_KEY_ADD_QNA && <AddEditQna addEdit={'add'} saveHandler={addqna} submitText={'Add Question'} />}
         {tab === TAB_KEY_EDIT_QNA && <AddEditQna addEdit={'edit'} saveHandler={editqna} submitText={'Save'} editQna={editQna} />}
