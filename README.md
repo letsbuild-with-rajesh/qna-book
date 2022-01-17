@@ -1,5 +1,5 @@
 ## Project
-QnA Book - A purely front-end project using localstorage
+QnA Book - A purely front-end project with localstorage as database
 
 #### Developed on
 React.js

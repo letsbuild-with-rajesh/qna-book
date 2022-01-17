@@ -14,11 +14,11 @@ export const AddEditQna = ({addEdit, saveHandler, submitText, editQna}) => {
         <div id="add-questions">
             <fieldset>
                 <legend>Question</legend>
-                <input type="text" id="question" name="question" defaultValue={question} />
+                <input type="text" id="question" name="question" defaultValue={question} autocomplete="off"/>
             </fieldset>
             <fieldset>
                 <legend>Answer</legend>
-                <textarea type="textarea" id="answer" name="answer" defaultValue={answer}/>
+                <textarea type="textarea" id="answer" name="answer" defaultValue={answer} autocomplete="off"/>
             </fieldset>
             <button className="add-edit-save-btn" onClick={onClickHandler}>{submitText}</button>
         </div>)
