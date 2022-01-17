@@ -74,15 +74,10 @@ button {
   cursor: pointer;
 }
 
-.edit-save-btn {
-  float:left;
-  margin: 10px 0 0 0;
-}
-
-.add-save-btn {
-  margin: 10px 0 0 0;
-}
-
 .add-btn, .gotoqna-btn {
   margin: 14px 0;
+}
+
+.add-edit-save-btn {
+  margin: 14px 0 0 0;
 }
